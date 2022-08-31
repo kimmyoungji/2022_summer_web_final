@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: "subway_nav";
+    src: url(./font/GmarketSansTTF/GmarketSansTTFMedium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "subway_h2";
+    src: url(./font/GmarketSansTTF/GmarketSansTTFBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, button, dl, dt, dd, div, form, fieldset, legend, h1, h2, h3, h4, h5, h6, input, select, textarea, ul, ol, li, p, pre, table, td, th, caption, a, button, figure {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+}
+
+html{
+    display: block;
+    /* height: 1420px;
+    min-width: 1280px; */
+}
+
+
+body{
+    display: block;
+    /* position: absolute;
+    justify-items: center; */
+}
+
+.container{
+    display: block;
+    position: relative;
+    background-color: white;
+    
+    display: grid;
+    grid-template-rows: 2fr 8fr 1.5fr;
+
+    font-family: "subway_nav";
+    
+}
+
+/* ===============헤더=============== */
+header{
+    /* height: 165px; */
+    background-color:white;
+    border-top: 5px solid #004d00;
+    min-width: 1280px;
+    display: grid;
+}
+
+.logo{
+    margin: 40px 20px 20px 20px;
+    /* border: solid 2px; */
+    padding: 10px 20px 10px 20px;
+    justify-self: center;
+}
+
+.util{
+    display: inline;
+    position: absolute;
+    margin: 80px 100px 50px 50px;
+    justify-self: end;
+}
+
+.util a{
+    padding:10px 10px 10px 10px;
+}
+
+nav{
+    display: grid;
+    max-width: 1170px;
+    grid-template-columns:repeat(6,1fr);
+    font-size: 20px;
+    
+    justify-self: center;
+}
+
+nav a{
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+/* ================메인=============== */
+main{
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+
+.banner{
+    background-color: greenyellow;
+    width:100%;
+    max-width: 1920px;
+    height:400px;
+    margin: 0px;
+}
+
+.products{
+    /* background-color: blueviolet; */
+    width:100%;
+    max-width: 1420px;
+    height: 400px;
+    margin: 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products h2{
+    font-family: "subway_h2";
+    position: absolute;
+    top: 730px;
+    left: 300px;
+    z-index: 99;
+    font-size: 24pt;
+}
+
+.products img{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 200px;
+}
+
+footer{
+    display: grid;
+    background-color: #292929;
+}
+
